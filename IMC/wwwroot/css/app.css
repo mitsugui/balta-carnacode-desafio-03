@@ -48,6 +48,18 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+
+/* Estilos para os inputs de texto */
+.input-text {
+   /* color: #555;*/
+    background-color: var(--cor-gray03);
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
 /*********************************/
 /*Css antigos do projeto original*/
 
