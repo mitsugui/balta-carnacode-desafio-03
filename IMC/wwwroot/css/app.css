@@ -14,6 +14,40 @@ html, body {
     text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para os botões */
+.btn1, .btn2 {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn1 {
+    background-color: #45fefe;
+    border: 2px solid #45fefe;
+    color: #000;
+}
+
+.btn2 {
+    background-color: #fff;
+    border: 2px solid #45fefe;
+    color: #000;
+}
+
+    .btn1:hover, .btn2:hover {
+        background-color: #ceeeee;
+        border-color: #ceeeee;
+    }
+
+/* Ajuste para os botões ficarem um abaixo do outro */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*********************************/
 /*Css antigos do projeto original*/
 

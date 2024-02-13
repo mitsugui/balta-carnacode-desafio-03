@@ -59,7 +59,7 @@ pageTitle {
 }
 
 /* Estilos para os botões */
-.btn1, .btn2 {
+/*.btn1, .btn2 {
     font-weight: bold;
     border-radius: 20px;
     padding: 10px 20px;
@@ -84,14 +84,14 @@ pageTitle {
     .btn1:hover, .btn2:hover {
         background-color: #ceeeee;
         border-color: #ceeeee;
-    }
+    }*/
 
 /* Ajuste para os botões ficarem um abaixo do outro */
-.btn-container {
+/*.btn-container {
     display: flex;
     flex-direction: column;  
     align-items: center;  
-}
+}*/
 
 /* Classe de espaçamento entre os inputs */
 .input-spacing {
