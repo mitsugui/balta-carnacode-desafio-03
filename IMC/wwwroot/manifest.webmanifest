@@ -1,27 +1,47 @@
 {
-  "name": "IMC",
+  "name": "Calculadora IMC",
+  "lang": "pt-BR",
+  "orientation": "portrait",
   "short_name": "IMC",
   "id": "./",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#03173d",
+  "display_override": ["standalone", "browser"],
+  "background_color": "#2E1462",
+  "theme_color": "#2E1462",
   "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "imgs/manifest-icon-512.maskable.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        },
-        {
-            "src": "imgs/manifest-icon-192.maskable.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "imgs/apple-icon-180.png",
-            "type": "image/png",
-            "sizes": "180x180"
-        }
-    ]
+  "icons": [
+    {
+      "src": "imgs/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "imgs/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "imgs/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "imgs/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+        "name": "Histórico",
+        "description": "Ver histórico de medições.",
+        "url": "/history"
+        ]
+    }
+  ]
 }
