@@ -96,3 +96,27 @@ Avançado:
     2. Navegar até a pasta wwwroot que está dentro da pasta publicada (procurar o último nível)
     3. Executar ```http-server -c1```
     4. Abrir no browser.
+
+7. Publicar no GitHub Pages.
+    1. Criar Token para a automação.
+        1. Clicar na foto do perfil e Settings.
+        2. Developer settings.
+        3. Personal access tokens.
+        4. Generate new token (Classic).
+            1. Note: GITHUB_TOKEN
+            2. Expiração: No expiration
+            3. Permissões:
+                workflow
+                write:packages
+                admin:org
+                admin:public_key
+                admin:repo_hook
+                admin:org_hook
+                user
+                codespace
+                project
+                admin:gpg_key
+                admin:ssh_signing_key
+        5. Copiar a chave gerada.
+    
+        

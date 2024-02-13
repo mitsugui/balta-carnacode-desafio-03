@@ -19,8 +19,8 @@ jobs:
             - name: Publish .NET Core Project
               run: dotnet publish IMC/IMC.csproj -c Release -o release --nologo
 
-            - name: copy index.html to 404.html
-              run: cp release/wwwroot/index.html release/wwwroot/404.html
+            - name: Change base-tag in index.html to match GitHub Pages repository subdirectory
+              run: sed -i 's/<base href="\/" \/>/<base href="\/balta-carnacode-desafio-03\/" \/>/g' release/wwwroot/index.html
 
             - name: Add .nojekyll file
               run: touch release/wwwroot/.nojekyll
@@ -32,4 +32,4 @@ jobs:
                   BRANCH: gh-pages
                   FOLDER: release/wwwroot
                   
-# Based on https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages
+# Copiado de https://gist.github.com/Carl-Hugo/721b848942083dc7739141a917a30653
