@@ -7,30 +7,18 @@ O CarnaCode é um evento online e gratuito que acontece nos dias 10, 11, 12 e 13
 👉 https://go.balta.io/carnacode-2024
 
 ## Sobre o Desafio
-
-Neste segundo desafio, desenvolvemos uma aplicação completa para calcular o IMC (Índice de Massa Muscular). Aprendemos conceitos como Razor e Blazor, bem como rotas, componentes e outros itens do ASP.NET.
-
-## Assuntos a pesquisar
-
-- Localstorage
-- Componentes
-- JsInterop
-- Data Bindings
-- Validação de Formulários
-- Child Content
+Neste terceiro desafio, adicionamos suporte a PWA e publicamos a aplicação completa para calcular o IMC (Índice de Massa Muscular) que fizemos nos desafios anteriores. Aprendemos conceitos como Git, GitHub, CI/CD, DevOps e PWA.
 
 ## Desafios
 
 Fácil: 
-	* Adicionar suporte a PWA
-	* Ajustar manisfeto
-	* Publish local
+	* Publicar a aplicação localmente.
 
 Médio: 
-	* Salvar as informações no localstorage.
+	* Publicar a aplicação em um host qualquer.
 
 Avançado: 
-	*Componentizar o cálculo do IMC.
+	* Configurar CI/CD para publicar a aplicação automaticamente usando GitHub actions para o GitHub pages.
 
 ### Tecnologias Utilizadas
 * ASP.NET
