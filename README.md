@@ -97,7 +97,7 @@ Avançado:
     3. Executar ```http-server -c1```
     4. Abrir no browser.
 
-7. Publicar no GitHub Pages.
+7. Publicar no GitHub Pages. [Referência 1](https://www.youtube.com/watch?v=0cvpumXKhBI)
     1. Criar Token para a automação.
         1. Clicar na foto do perfil e Settings.
         2. Developer settings.
@@ -118,5 +118,55 @@ Avançado:
                 admin:gpg_key
                 admin:ssh_signing_key
         5. Copiar a chave gerada.
-    
-        
+    2. Criar action para preparar o ramo que será usado no github pages.
+        1. Criar arquivo na pasta 
+        <pasta da solução>\.github\workflows\main.yml
+
+```YAML
+        name: Deploy Blazor WASM to GitHub Pages
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    deploy-to-github-pages:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Setup .NET Core SDK
+              uses: actions/setup-dotnet@v1
+              with:
+                  dotnet-version: 8.0.101
+                  include-prerelease: true
+
+            - name: Publish .NET Core Project
+              run: dotnet publish IMC/IMC.csproj -c Release -o release --nologo
+
+            - name: Change base-tag in index.html to match GitHub Pages repository subdirectory
+              run: sed -i 's/<base href="\/" \/>/<base href="\/balta-carnacode-desafio-03\/" \/>/g' release/wwwroot/index.html
+
+            - name: Add .nojekyll file
+              run: touch release/wwwroot/.nojekyll
+
+            - name: Commit wwwroot to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@3.7.1
+              with:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: release/wwwroot
+
+```
+        2. Substituir o texto "balta-carnacode-desafio-03" na linha ```run: sed...``` pelo nome do repositório github.
+        3. Fazer commit do arquivo.
+    3. Verificar se o workflow foi executado com sucesso.
+        1. Acessar a aba "Actions" do github.
+        2. Clicar no workflow "Deploy Blazor WASM to GitHub Pages".
+    4. Configurar GitHub pages.
+        1. Acessar a aba "Settings" do repositório.
+        2. Descer até a seção "GitHub Pages".
+        3. Ma sessão "Build and deployment":
+            1. Escolher Source "Deploy from a branch". 
+            2. Escolher a opção "gh-pages" e salvar.
+        4. Acessar o link gerado.
