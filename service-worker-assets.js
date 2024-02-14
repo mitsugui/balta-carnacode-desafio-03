@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-askVr1PQCnSVr0CM4dm6xq1pBYzFvKK4yNT51lBtvn0=",
+      "hash": "sha256-BhNZSgDIX6mpOHWq0Gxvpc4b7Gti7NESwDUk7bOCl28=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -41,7 +41,7 @@
       "url": "_framework\/Blazored.LocalStorage.wasm"
     },
     {
-      "hash": "sha256-phb4tHlOB5Zq2tOfQ8o6ZJrQuNA+XSDnsGNK8BVlnOw=",
+      "hash": "sha256-bOv0p1RG0zKm7TLKH\/Wuv5YQPJZTBhicmSIsOUeuv1k=",
       "url": "_framework\/IMC.wasm"
     },
     {
@@ -209,14 +209,6 @@
       "url": "IMC.styles.css"
     },
     {
-      "hash": "sha256-5hh3frNWVFQ5SbqZrM493\/EbiBJLXSkOaFLtJfGlhcc=",
-      "url": "assets\/icon-no-bg.png"
-    },
-    {
-      "hash": "sha256-CffrfLQgNgUWRiTiTiXOtbHGND1sI40lvThOwDddzCw=",
-      "url": "assets\/icon.png"
-    },
-    {
       "hash": "sha256-Aq+ywj1tpC1y8fUEn3GSbRATNnVvFMExWIJNyy\/6ZtQ=",
       "url": "css\/app.css"
     },
@@ -245,16 +237,16 @@
       "url": "favicon.png"
     },
     {
+      "hash": "sha256-VWzg4mdzdmGnhLB22imsLRifxymuutzi4hOvqHDACGs=",
+      "url": "imgs\/apple-icon-180.png"
+    },
+    {
       "hash": "sha256-5hh3frNWVFQ5SbqZrM493\/EbiBJLXSkOaFLtJfGlhcc=",
-      "url": "icon-no-bg.png"
+      "url": "imgs\/icon-no-bg.png"
     },
     {
       "hash": "sha256-CffrfLQgNgUWRiTiTiXOtbHGND1sI40lvThOwDddzCw=",
-      "url": "icon.png"
-    },
-    {
-      "hash": "sha256-VWzg4mdzdmGnhLB22imsLRifxymuutzi4hOvqHDACGs=",
-      "url": "imgs\/apple-icon-180.png"
+      "url": "imgs\/icon.png"
     },
     {
       "hash": "sha256-F7El9pSGVFp5Tx+phgJN7SGF8rQL4qr4Xh\/dHQ4R2oU=",
@@ -265,7 +257,7 @@
       "url": "imgs\/manifest-icon-512.maskable.png"
     },
     {
-      "hash": "sha256-VJ7UHWCiKVVVRZaPdonQavpeKrG8a36f\/4+2+vTkArs=",
+      "hash": "sha256-Y3F4\/qa6ZFqBvSF3+b2uFQYF9EsKLJovf2NlvXYiEWs=",
       "url": "index.html"
     },
     {
@@ -273,5 +265,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "Nd1fCa92"
+  "version": "oMtTxNPq"
 };
