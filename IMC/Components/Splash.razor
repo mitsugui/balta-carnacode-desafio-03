@@ -1,0 +1,17 @@
+﻿
+
+<div class="splash-container" @onclick="AppStart">
+    <div class="splash-border">
+        <div class="splash">
+            <img class="splash-image" src="../assets/icon.png" alt="">
+        </div>
+       
+    </div>
+</div>
+
+@code {
+    private void AppStart()
+    {
+        Navigation.NavigateTo("/imc");
+    }
+}
