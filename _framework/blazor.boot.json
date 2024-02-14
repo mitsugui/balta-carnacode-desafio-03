@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "IMC",
   "resources": {
-    "hash": "sha256-JBl7/ing/DhpyoiRt2AZGriTE81QwIEr2iSoOC4gNPo=",
+    "hash": "sha256-4PDj3a/eKhLe+CZ4l1+Kc69amVIgeL5iZieBAaPbUkA=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.ahpp78valh.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -18,9 +18,9 @@
     },
     "assembly": {
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "IMC.wasm": "sha256-eTQMDnGfOy9pVFFzLOZ6fRnCwQfHGuLO2RGLT09kVvM=",
+      "IMC.wasm": "sha256-rxnXWM/Nxvcy3P1oAfLmatDffWUHFWjU/Mf369wk8e4=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-Jp7pauuml/qI4U6F+6e+zuz8KE3G3a96sy/+cXNiFEg=",
-      "Microsoft.AspNetCore.Components.wasm": "sha256-1k8W7gBHLn6fvANiKXmFRJpyMs1k+jubrQiWkQXFv8w=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-fLU84IjX0FoAx9As7IoY1YYDBljENLu0XBlZw92Lnes=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-cnXH/rerYE3gcSEeYtCnvK4k21P1HGuU1DFcS6nhY28=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-XZD3tHlm7Gqn+AKf2i0RaiP+KuSV62HRKkIryz2t7mo=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-87sn2TYqgdZ95sXmavjKEzoEfMgHnYQ9LOvnMX+aZcI=",
@@ -53,7 +53,7 @@
       "System.Private.Uri.wasm": "sha256-3S7OsGtSFPOaz0ACQV0we8GrCgEvrxE9IlAaqHpCw9Y=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-XBagiVAlQbRN/bqb370sy9dwk86Iw2uxiqKePLow5FA=",
       "System.Runtime.Serialization.Primitives.wasm": "sha256-OtSaXIzdIhZRNhPMb9/ALDSWM+FhsU6cNA4mMKwkRXU=",
-      "System.Runtime.wasm": "sha256-pcrdQGC9j0mbh7AmX7QVeE/xAVCPG/e3axoLG+uAoO0=",
+      "System.Runtime.wasm": "sha256-xeSRNeMoOVeD9o+auK8Do09XZjswoyqLQ/3n+yXuqXY=",
       "System.Text.Encodings.Web.wasm": "sha256-+xy+tOrpZQfQay41WvWhFxGHmHiYCwxIZC0u0YeG8MY=",
       "System.Text.Json.wasm": "sha256-4vevi/Vf9eO/+O8Q2VuGURUCYCmWmoOLVGFyjsBDX5s=",
       "System.Text.RegularExpressions.wasm": "sha256-u9GMtQM6npAsloiWKhxZbaZ0yPDMLmb/+UXI5xGbntY=",
