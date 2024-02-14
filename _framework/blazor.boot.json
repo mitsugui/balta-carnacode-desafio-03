@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "IMC",
   "resources": {
-    "hash": "sha256-PDK3y6EX3P4gAmihz7/ynRtBL1XZ/4xzOMY+WMxpN64=",
+    "hash": "sha256-xgRp3EDoPxK/Cfihy3iJygCpBaIDDRqOLhjRSIA7nWk=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.ahpp78valh.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -18,7 +18,7 @@
     },
     "assembly": {
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "IMC.wasm": "sha256-+qgfHAVrbno/TaUBq2rgJsbXOdas/Gm2e1XVFRmlFZA=",
+      "IMC.wasm": "sha256-XdaMKEwTTdEGebifiI4X0+QgrFiXabvBucOu0Pk7glY=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-Jp7pauuml/qI4U6F+6e+zuz8KE3G3a96sy/+cXNiFEg=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-lXEJkvAfZiZi1cQZk/ce6UVeQJMWmt6MBZQZVpmx1fg=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-FTsKqEy5XF6YBKdLb6q0Pobez8C5YN4C4AR3t9JMHgg=",
