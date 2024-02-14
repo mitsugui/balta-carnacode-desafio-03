@@ -13,7 +13,7 @@ public class BMIModel
     public double? Peso { get; set; }
 
     [Required(ErrorMessage = "O sexo é obrigatório.")]
-    public string Sexo { get; set; }
+    public string? Sexo { get; set; }
 
     public bool Mais65Anos { get; set; }
 
