@@ -8,7 +8,7 @@
     </div>
     <h1 class="titulo">Histórico</h1>
     <div class="history">
-        <input id="pesquisa-historico" type="text" class="input-text-history" placeholder="Pesquisar...">
+        <input id="pesquisa-historico" type="text" class="input-text-history" placeholder="Pesquisar..." @bind="_textoPesquisa" @bind:after="Pesquisar">
         @foreach (var registro in _bmiHistory)
         {
             <div class="card">
@@ -31,16 +31,33 @@
 
 
 @code {
+	private string? _textoPesquisa;
+	private List<RegistroHistoricoViewModel> _historicoCompleto = new();
     private List<RegistroHistoricoViewModel> _bmiHistory = new();
 
     protected override async Task OnInitializedAsync()
     {
         var bmis = await BmiService.ListarAsync();
 
-        _bmiHistory = bmis
-            .OrderByDescending(bmi => bmi.DataCalculo)
-            .Select(bmi => new RegistroHistoricoViewModel(bmi))
-            .ToList();
+        _historicoCompleto = bmis
+	        .OrderByDescending(bmi => bmi.DataCalculo)
+	        .Select(bmi => new RegistroHistoricoViewModel(bmi))
+	        .ToList();
+        _bmiHistory = _historicoCompleto;
+    }
+
+    private void Pesquisar()
+    {
+	    _bmiHistory = _textoPesquisa == null
+		    ? _historicoCompleto
+		    : _historicoCompleto
+			    .Where(item => item.TextoDataHora
+					    .Contains(_textoPesquisa, StringComparison.InvariantCultureIgnoreCase)
+				    || item.Texto
+					    .Contains(_textoPesquisa, StringComparison.InvariantCultureIgnoreCase)
+				    || item.Titulo
+					    .Contains(_textoPesquisa, StringComparison.InvariantCultureIgnoreCase))
+			    .ToList();
     }
 
     public class RegistroHistoricoViewModel
@@ -83,4 +100,5 @@
             Texto = Mensagens[bmi.Situacao];
         }
     }
+
 }
